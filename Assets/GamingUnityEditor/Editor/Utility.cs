@@ -89,6 +89,8 @@ namespace GamingUnityEditor
         private T _value;
         private readonly List<IObserver<T>> _observers = new();
 
+        public T Value => _value;
+
         public IDisposable Subscribe(IObserver<T> observer)
         {
             _observers.Add(observer);

@@ -142,7 +142,7 @@ namespace GamingUnityEditor
                 })
                 .AddTo(_disposables);
             _isRect
-                .Where(_ => gamingData.isGamingActivation)
+                .Where(_ => gamingData.isGamingActivation && _modePlayType.Value == PlayType.On)
                 .Subscribe(x =>
                 {
                     activateRect?.Invoke(x);
@@ -150,7 +150,7 @@ namespace GamingUnityEditor
                 })
                 .AddTo(_disposables);
             _isBlit
-                .Where(_ => gamingData.isGamingActivation)
+                .Where(_ => gamingData.isGamingActivation && _modePlayType.Value == PlayType.On)
                 .Subscribe(x =>
                 {
                     activateTexture?.Invoke(x);
@@ -158,7 +158,7 @@ namespace GamingUnityEditor
                 })
                 .AddTo(_disposables);
             _isClip
-                .Where(_ => gamingData.isGamingActivation)
+                .Where(_ => gamingData.isGamingActivation && _modePlayType.Value == PlayType.On)
                 .Subscribe(x =>
                 {
                     activateClip?.Invoke(x);
@@ -166,7 +166,7 @@ namespace GamingUnityEditor
                 })
                 .AddTo(_disposables);
             _isClipText
-                .Where(_ => gamingData.isGamingActivation)
+                .Where(_ => gamingData.isGamingActivation && _modePlayType.Value == PlayType.On)
                 .Subscribe(x =>
                 {
                     activateClipText?.Invoke(x);
