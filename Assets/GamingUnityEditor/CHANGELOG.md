@@ -9,6 +9,6 @@ All notable changes to this project will be documented in this file.
 ### Added
 - Letting Unity Editor be Gaming color in 4 area.
   - Background
-  - EditorWindow's Background / Input field
+  - EditorWindowTitle's background / Input field
   - Icon 
   - Text
