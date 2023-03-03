@@ -1,6 +1,6 @@
 {
   "name": "com.kitatas.gamingunityeditor",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Letting Unity Editor be Gaming color.",
   "displayName": "GamingUnityEditor",
   "unity": "2021.3",
